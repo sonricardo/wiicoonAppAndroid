@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/add_item"
+        android:icon="@android:drawable/ic_input_add"
+        android:title="Configuraciones"
+        android:orderInCategory="3"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/return_item"
+        android:icon="@mipmap/ic_return"
+        android:title="Iformacion"
+        android:orderInCategory="1"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/refresh_item_config_activity"
+        android:icon="@mipmap/ic_lupa"
+        android:title="Refrescar"
+        android:orderInCategory="2"
+        app:showAsAction="always" />
+
+
+
+
+
+
+</menu>

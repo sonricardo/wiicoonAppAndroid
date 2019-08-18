@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.wiicoon.rubi.wicoon_ligh_controller"
+    tools:ignore="ExtraText">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.OVERRIDE_WIFI_CONFIG"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:name="com.wiicoon.rubi.wicoon_ligh_controller.app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name="com.wiicoon.rubi.wicoon_ligh_controller.activities.MainActivity"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wiicoon.rubi.wicoon_ligh_controller.splash.SplashActivity"
+            android:theme="@style/SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name="com.wiicoon.rubi.wicoon_ligh_controller.activities.ConfigListActivity" />
+        <activity
+            android:name="com.wiicoon.rubi.wicoon_ligh_controller.activities.AddActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="ADD"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.wiicoon.rubi.wicoon_ligh_controller.activities.ScheduleActivity" />
+        <activity android:name="com.wiicoon.rubi.wicoon_ligh_controller.activities.ScheduleMenuActivity"></activity>
+    </application>
+
+</manifest>

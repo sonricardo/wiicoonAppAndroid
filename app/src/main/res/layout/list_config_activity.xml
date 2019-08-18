@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:paddingTop="10dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="10dp"
+    >
+
+
+    <TextView
+        android:id="@+id/textViewMacStatic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mac: "
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textAppearance="@style/Base.Animation.AppCompat.DropDownUp"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <TextView
+        android:id="@+id/textViewMac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="3dp"
+        android:text="TextView"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textViewMacStatic" />
+
+    <TextView
+        android:id="@+id/textViewFocosNames"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:paddingTop="14dp"
+        android:paddingBottom="5dp"
+        android:gravity="left"
+        android:layout_below="@+id/textViewMacStatic" />
+
+    <TextView
+        android:id="@+id/textViewDispStatic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salidas Disponibles: "
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:textAppearance="@style/Base.Animation.AppCompat.DropDownUp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/textViewDisp"
+        android:layout_toStartOf="@+id/textViewDisp"
+        android:layout_below="@+id/textViewFocosNames"
+        android:paddingBottom="15dp"/>
+
+    <TextView
+        android:id="@+id/textViewDisp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:gravity="left"
+        android:layout_alignBaseline="@+id/textViewDispStatic"
+        android:layout_alignBottom="@+id/textViewDispStatic"
+        android:layout_alignParentRight="true"
+
+        android:paddingBottom="15dp"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/textViewMac"
+        android:layout_toStartOf="@+id/textViewMac"
+        app:srcCompat="@mipmap/ic_placa" />
+
+
+</RelativeLayout>
+
+

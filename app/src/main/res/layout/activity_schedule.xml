@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutScheduleActivity"
+    tools:context="com.wiicoon.rubi.wicoon_ligh_controller.activities.ScheduleActivity">
+
+
+
+
+    <ProgressBar
+        android:id="@+id/progressBarScheduleCharge"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/timePickerLayout"
+
+
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imageViewLightIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/ic_light_off" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupOnOff"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp">
+
+                <RadioButton
+                    android:id="@+id/radioButtonOn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="ON"
+                    android:textSize="11dp"
+                     />
+
+                <RadioButton
+                    android:id="@+id/radioButtonOff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="OFF"
+                    android:textSize="11dp" />
+
+            </RadioGroup>
+
+          </LinearLayout>
+
+
+
+
+
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="233dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:timePickerMode="spinner"
+        />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/botonesLinearLayout"
+
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonCancelarYsalir"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Cancelar
+y salir"
+            android:textSize="12dp"
+
+            android:background="@color/colorDisconnected"
+
+            />
+
+        <Button
+            android:id="@+id/buttonGuardarYsalir"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="guardar y salir"
+            android:textSize="12dp"
+            android:textColor="#ffff"
+            android:background="@color/colorAccent"
+             />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/radioGroupLayout"
+        android:layout_above="@+id/checkboxLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        >
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/checkboxLayout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_above="@+id/chkBoxFinDeLayout"
+        android:background="@color/colorApMode"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <CheckBox
+            android:id="@+id/checkBoxDomingo"
+            android:layout_width="76dp"
+            android:layout_height="35dp"
+            android:layout_gravity="top"
+            android:text="DOM"
+
+            />
+
+        <CheckBox
+            android:id="@+id/checkBoxLunes"
+            android:layout_width="72dp"
+            android:layout_height="35dp"
+
+            android:text="LUN" />
+
+        <CheckBox
+            android:id="@+id/checkBoxMartes"
+            android:layout_width="73dp"
+            android:layout_height="35dp"
+
+            android:text="MAR" />
+
+        <CheckBox
+            android:id="@+id/checkBoxMiercoles"
+            android:layout_width="95dp"
+            android:layout_height="35dp"
+            android:layout_gravity="end"
+            android:text="MIE" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/chkBoxFinDeLayout"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_above="@+id/botonesLinearLayout"
+            android:background="@color/colorApMode"
+            android:layout_marginRight="10dp"
+            >
+        <CheckBox
+            android:id="@+id/checkBoxJueves"
+            android:layout_width="76dp"
+            android:layout_height="35dp"
+            android:layout_gravity="top"
+
+
+            android:text="JUE" />
+
+            <CheckBox
+                android:id="@+id/checkBoxViernes"
+                android:layout_width="72dp"
+                android:layout_height="35dp"
+
+                android:text="VIE" />
+
+            <CheckBox
+            android:id="@+id/checkBoxSabado"
+            android:layout_width="75dp"
+            android:layout_height="35dp"
+            android:layout_gravity="top"
+
+            android:text="SAB" />
+        </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkBoxNoRepetirSiempre"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="repetir cada semana"
+        android:layout_alignTop="@+id/radioGroupLayout"
+        android:layout_alignStart="@+id/radioGroupLayout" />
+
+    <CheckBox
+        android:id="@+id/checkBoxRepetirUnaVez"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+
+        android:layout_alignParentEnd="true"
+        android:text="Una vez"
+        android:layout_above="@+id/checkboxLayout"
+
+        android:layout_toRightOf="@+id/checkBoxNoRepetirSiempre"
+        android:layout_toEndOf="@+id/checkBoxNoRepetirSiempre" />
+
+
+</RelativeLayout>

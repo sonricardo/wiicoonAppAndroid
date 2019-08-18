@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/LinearLayoutConfigList"
+    tools:context=".activities.ConfigListActivity"
+    android:orientation="vertical"  >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorButtonRed"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/buttonSsidList"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+
+            android:paddingLeft="5dp"
+            android:text="SSID"
+            android:textAlignment="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:textColor="#333"
+            android:layout_alignBottom="@+id/progressBarButtonCharge"
+            android:layout_alignTop="@+id/imageViewVerify" />
+
+        <TextView
+            android:id="@+id/textViewSSIDname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@+id/buttonSsidList"
+            android:background="@color/colorConnected"
+            android:text=""
+            android:textColor="#ffff"
+            android:textSize="10dp"
+            android:textStyle="italic"
+
+            />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/textViewSSIDname"
+            android:layout_toRightOf="@+id/textViewSSIDname"
+            android:text="KEY: "
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:textColor="#ffff" />
+
+
+        <Button
+            android:id="@+id/buttonGuardarLan"
+            android:layout_width="48dp"
+            android:layout_height="37dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:background="@color/colorDisconnected"
+            android:focusable="true"
+            android:text="GUARDAR"
+            android:textSize="8dp" />
+
+
+        <EditText
+            android:id="@+id/editTextPass"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_toRightOf="@+id/textView2"
+            android:ems="8"
+            android:hint="Password"
+            android:inputType="text"
+            android:password="true"
+            android:textColor="#ffff"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/imageViewVerify"
+            android:layout_width="29dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_toEndOf="@+id/editTextPass"
+            android:layout_toRightOf="@+id/editTextPass"
+            app:srcCompat="@mipmap/ic_marco" />
+
+
+        <ProgressBar
+            android:id="@+id/progressBarButtonCharge"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/buttonGuardarLan"
+            android:layout_alignStart="@+id/buttonGuardarLan"
+            android:visibility="invisible"
+            android:layout_alignTop="@+id/buttonGuardarLan"
+            android:layout_alignRight="@+id/buttonGuardarLan"
+            android:layout_alignEnd="@+id/buttonGuardarLan" />
+
+
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listViewConfigActivity"/>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/contextMenuComRed"
+        android:title="Compartir red"
+
+        />
+    <item android:id="@+id/contextMenuBorPla"
+        android:title="Borrar placa"
+
+        />
+    <item android:id="@+id/contextMenuReset"
+        android:title="Resetear placa"
+
+        />
+
+
+
+    <item android:id="@+id/contextMenuActivarAp"
+        android:title="Activar Ap"
+
+        />
+
+    <item android:id="@+id/contextMenuDesactivarAP"
+        android:title="Desactivar Ap"
+
+        />
+
+    <item android:id="@+id/contextMenuRegresar"
+        android:title="Regresar"
+
+        />
+
+</menu>

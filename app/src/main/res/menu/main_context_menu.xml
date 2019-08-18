@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/contextMenuEdtNom"
+        android:title="Editar Nombre"
+
+        />
+    <item android:id="@+id/contextMenuSch"
+        android:title="Menu Horarios"
+
+        />
+
+
+    <item android:id="@+id/contextMenuBorFoc"
+        android:title="Borrar foco"
+
+        />
+
+    <item android:id="@+id/contextMenuReg"
+        android:title="Regresar"
+
+        />
+
+</menu>

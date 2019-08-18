@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relative"
+    tools:context=".activities.AddActivity">
+
+
+    <TextView
+        android:id="@+id/textViewMacPlacaAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="50dp"
+        android:inputType="textPersonName"
+         />
+
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_below="@+id/textViewMacPlacaAdd"
+        android:layout_alignLeft="@+id/textViewMacPlacaAdd"
+        android:layout_alignStart="@+id/textViewMacPlacaAdd"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="18dp" />
+
+    <Button
+        android:id="@+id/buttonManual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONECTAR"
+        android:textSize="12dp"
+        android:background="#FFFF00"
+        android:layout_marginRight="31dp"
+        android:layout_marginEnd="31dp"
+        android:layout_alignTop="@+id/textViewMacPlacaAdd"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/buttonAgregarFocos"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|center"
+        android:text="AGREGAR FOCOS"
+        android:background="@color/colorButtonRed"
+        android:textColor="#ffff"
+        android:visibility="invisible"
+        android:paddingBottom="2dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" />
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frameLayout"
+        android:layout_below="@+id/buttonManual"
+        android:layout_above="@id/buttonAgregarFocos"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+
+        <android.support.v7.widget.RecyclerView
+
+            android:id="@+id/reciclerViewAdd"
+            android:descendantFocusability="beforeDescendants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="61dp" />
+
+        <TextView
+            android:id="@+id/textViewStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="41dp"
+            android:layout_marginEnd="41dp"
+            android:text="TextView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="36dp" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SSID"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignLeft="@+id/textViewMacPlacaAdd"
+        android:layout_alignStart="@+id/textViewMacPlacaAdd" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONECTARSE"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat"
+        android:textStyle="bold"
+        android:layout_above="@+id/buttonManual"
+        android:layout_alignLeft="@+id/buttonManual"
+        android:layout_alignStart="@+id/buttonManual"
+        android:layout_marginBottom="15dp" />
+
+
+
+
+</RelativeLayout>

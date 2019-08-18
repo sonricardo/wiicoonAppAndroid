@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/itemAddScheduleMenu"
+        android:icon="@android:drawable/ic_input_add"
+        android:title="Agregar Horario"
+        android:orderInCategory="3"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/itemReturnSceduleMenu"
+        android:icon="@mipmap/ic_return"
+        android:title="Iformacion"
+        android:orderInCategory="2"
+        app:showAsAction="always" />
+
+
+
+
+</menu>

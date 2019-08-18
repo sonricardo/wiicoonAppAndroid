@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:paddingRight="10dp"
+   >
+
+
+    <CheckBox
+        android:id="@+id/checkBoxFoco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+         />
+
+    <EditText
+        android:id="@+id/editTextNameNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:maxLength="20"
+        android:textSize="15dp"
+        android:text=""
+        android:layout_centerVertical="true"
+
+        android:layout_toLeftOf="@+id/buttonTest"
+        android:layout_toRightOf="@+id/checkBoxFoco" />
+
+    <Button
+        android:id="@+id/buttonTest"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="prueba"
+        android:textSize="8dp"
+        android:textColor="#fff"
+
+        android:background="@drawable/btn_circle"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        />
+
+
+</RelativeLayout>

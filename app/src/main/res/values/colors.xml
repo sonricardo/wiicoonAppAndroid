@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#C62828</color>
+    <color name="colorPrimaryDark">#B71C1C</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorConnected">#9CCC65</color>
+    <color name="colorDisconnected">#BBBBBB</color>
+    <color name="colorInternetRemote">#E040FB</color>
+    <color name="colorApMode">#90CAF9</color>
+    <color name="colorButtonRed">#DD0000</color>
+    <color name="colorButtonRedPressed">#770000</color>
+    <color name="colorButtonRedFocused">#FF0000</color>
+    <color name="colorNegro">#000000</color>
+    <color name="colorGris">#9E9E9E</color>
+
+
+</resources>

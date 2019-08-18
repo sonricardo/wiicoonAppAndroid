@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" 
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@color/colorDisconnected"
+    android:id="@+id/recyclerViewScheduleMenu"
+
+
+                                        >
+
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/textViewHour"
+        android:layout_alignParentLeft="true"
+        android:text="08"
+        android:textSize="65dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:layout_width="15dp"
+        android:layout_height="80dp"
+        android:id="@+id/textView1"
+        android:layout_toRightOf="@+id/textViewHour"
+        android:text=":"
+        android:textSize="65dp"
+        />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/textViewMinutes"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="16"
+        android:textSize="65dp"
+        />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:id="@+id/textView2"
+        android:layout_marginTop="17dp"
+        android:text="Accion:"
+        android:textSize="15dp"
+        android:layout_marginLeft="20dp"
+
+        android:layout_toEndOf="@+id/textViewMinutes" />
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:id="@+id/textViewAccion"
+        android:text="OFF"
+        android:textSize="15dp"
+        android:layout_marginLeft="5dp"
+        android:background="@color/colorConnected"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2" />
+
+
+
+
+
+    <Switch
+        android:id="@+id/switchAlarmOnOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activado"
+
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+         />
+
+    <ImageButton
+        android:id="@+id/imageButtonDeleteHorario"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@android:drawable/ic_delete"
+        />
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="15dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentBottom="true"
+
+        android:text="Dias:"
+        android:layout_below="@+id/textViewHour" />
+
+    <TextView
+        android:id="@+id/textViewDaysOfWeek"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="15dp"
+        android:text="TextView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/textViewMinutes"
+        android:layout_toEndOf="@+id/textView6"
+        android:layout_below="@+id/textViewHour" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Repetir:"
+        android:layout_below="@+id/textView2"
+        android:layout_toStartOf="@+id/textViewAccion" />
+
+    <TextView
+        android:id="@+id/textViewRepeatIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/textView5"
+        android:text="NO"
+        android:layout_below="@+id/textView2"
+         />
+
+</RelativeLayout>
