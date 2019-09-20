@@ -40,8 +40,9 @@ public class AsynkTaskDelayAndRepeat extends AsyncTask< Integer , Integer, Integ
     @Override
     final protected void onPostExecute(Integer progress) {
 
-        if (mListener != null)
+        if (mListener != null) {
             mListener.onPostExecuteConcluded();
+        }
     }
 
     @Override

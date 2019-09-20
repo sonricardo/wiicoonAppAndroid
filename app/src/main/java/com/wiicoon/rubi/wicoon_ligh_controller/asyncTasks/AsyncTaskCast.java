@@ -21,7 +21,7 @@ import static com.wiicoon.rubi.wicoon_ligh_controller.app.RequestHttpMetods.http
  * Created by Rubi on 10/22/2017.
  */
 
-public abstract class AsyncTaskCast extends AsyncTask< List<Placa>, Integer, List<Placa> > {
+public  class AsyncTaskCast extends AsyncTask< List<Placa>, Integer, List<Placa> > {
 
     public interface MyAsyncTaskListener {
         void onPostExecuteConcluded(List<Placa> placasActualizadas);

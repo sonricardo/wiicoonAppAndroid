@@ -23,10 +23,10 @@ import static com.wiicoon.rubi.wicoon_ligh_controller.app.RequestHttpMetods.AP_G
 import static com.wiicoon.rubi.wicoon_ligh_controller.app.RequestHttpMetods.WS_GET_DATA;
 
 /**
- * Created by Rubi on 10/22/2017.
+ * Created by Ricardo Coronado Galindo (sonricardo) on 22/10/2017.
  */
 
- public abstract class AsyncTaskRefresh extends AsyncTask < List<Placa>, Placa , List<Placa> > {
+ public  class AsyncTaskRefresh extends AsyncTask < List<Placa>, Placa , List<Placa> > {
 
     public interface MyAsyncTaskListener {
         void onPostExecuteConcluded(List<Placa> placasActualizadas);

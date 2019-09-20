@@ -1,5 +1,13 @@
 package com.wiicoon.rubi.wicoon_ligh_controller.activities;
 
+/*
+    Ricardo Coronado Galindo
+    Sonricardo 2017
+    Wiicoon
+    documented sep 2019
+
+    MAIN ACTIVITY
+ */
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -54,7 +62,7 @@ import static com.wiicoon.rubi.wicoon_ligh_controller.asyncTasks.AsyncTaskRefres
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
-    private ListView listView;
+    private ListView listView;   //
     private FocoAdapter focoAdapter;
 
     private Realm realm;
@@ -86,8 +94,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     private int responseHttp = IDDLE;
     private int commandReqActivate = IDDLE;
 
-    AsyncTaskRefresh asyncTaskRefresh = new AsyncTaskRefresh(){};
-    AsyncTaskCast asyncTaskCast = new AsyncTaskCast() {};
+    AsyncTaskRefresh asyncTaskRefresh = new AsyncTaskRefresh();
+    AsyncTaskCast asyncTaskCast = new AsyncTaskCast();
     AsynkTaskDelayAndRepeat asynkTaskDelayAndRepeat = new AsynkTaskDelayAndRepeat();
 
     AsyncTaskRefresh.MyAsyncTaskListener listener;
@@ -100,13 +108,13 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        super.onCreate(savedInstanceState);  //default configuration
+        setContentView(R.layout.activity_main);  //set the layout
 
         this.enforceIconBar();
 
         firsRefreshConcluded = false;
-        realm = Realm.getDefaultInstance();
+        realm = Realm.getDefaultInstance();   //get a realm instance
 
         wifiManager = (WifiManager)getApplicationContext().getSystemService(Context.WIFI_SERVICE);
         connectivityManager = (ConnectivityManager)getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);

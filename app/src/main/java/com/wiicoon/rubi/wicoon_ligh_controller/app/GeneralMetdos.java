@@ -8,6 +8,7 @@ import android.os.Build;
 import com.wiicoon.rubi.wicoon_ligh_controller.models_realm.Placa;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -190,8 +191,10 @@ public class GeneralMetdos {
         int diffDays;
         int daysOnOld = 0;
         int daysOnNew = 0;
+        Calendar old = Calendar.getInstance();
+        old.setTime(oldDate);
 
-        daysOnOld = daysOnOld + oldDate.getDate();
+        daysOnOld = daysOnOld + old.get(Calendar.DAY_OF_WEEK);
         daysOnNew = daysOnNew + currentDate.getDate();
 
         daysOnOld = daysOnOld + daysOnThisYear(oldDate.getYear()+1900, oldDate.getMonth());

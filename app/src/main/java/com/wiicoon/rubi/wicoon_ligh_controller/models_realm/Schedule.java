@@ -41,7 +41,7 @@ public class Schedule extends RealmObject {
         this.hour = hour;
         this.minute = minute;
         this.days = days;
-        IdFoco = idFoco;
+        this.IdFoco = idFoco;
         this.idPlaca = idPlaca;
         this.isActivate = isActivate;
         this.typeTurn = typeTurn;
